@@ -1,6 +1,7 @@
 $BGC: black;
 $TXTC: white;
 $SIZE: 42px;
+$SIZE-05: calc($SIZE / 2);
 $FONT: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 body {
@@ -22,4 +23,13 @@ body {
 
 .no-show {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: $SIZE-05;
+  }
+  #flag-div {
+    width: 300px;
+  }
 }
