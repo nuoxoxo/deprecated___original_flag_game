@@ -10,6 +10,9 @@
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
+	<style>
+		@import "../styles/styles.scss";
+	</style>
   <body>
 		<div id="flag-div"></div>
 		<div id="answer-div"></div>
@@ -48,7 +51,5 @@
 			NameElement.classList.toggle('no-show')
 		})
 	</script>
-	<style>
-		@import "../styles/styles.scss";
-	</style>
+
 </html>
