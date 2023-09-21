@@ -39,6 +39,7 @@
 
 		const NameElement = document.createElement('span')
 		NameElement.innerText = Choice.country
+		NameElement.style.display = Guessed ? 'flex' : 'none'
 		// NameElement.classList.add('no-show')
 		document.querySelector('#answer-div').appendChild(NameElement)
 
